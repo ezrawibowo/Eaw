@@ -1,0 +1,171 @@
+body{
+    background: #ffe6a7;
+    font-family: times, helvetica, serif;
+    padding-top: 5.4rem;
+}
+
+body, .nav-link, a{
+    color: #660708 !important;
+}
+
+
+/* prevent navbar covering content */
+
+html, body{
+    height: 100%;
+    overflow-y: hidden;
+}
+
+#scroll-container{
+    height: 100%;
+    overflow-y:auto;
+}
+
+
+/* navbar */
+
+.navbar{
+    border-bottom: solid 7px #660708;
+    background: #ffe6a7;
+}
+
+.navbar-toggler{
+    border-color: #99582a;
+}
+
+.bi-list{
+   color: #660708;  
+}
+
+.nav-pills li .active{
+    font-weight: bold;
+    background: none !important;
+}
+
+.nav-pills li .nav-link{
+    transition: border-width 0.2s;
+}
+
+.nav-pills li .nav-link:hover{
+    border: solid #660708;
+    border-width: 0px 5px;
+}
+
+.nav-pills li .nav-link:active{
+    border-width: 0px 3px;
+}
+
+
+/* section title */
+
+.border-top{
+    border-top:solid 10px #660708 !important;
+}
+
+/* home */
+
+#home{
+    color: #99582a;
+}
+
+#home a{
+    border: solid;
+    border-width: 3px 0px;
+    transition: letter-spacing 0.3s, padding 0.3s;
+}
+
+#home a:hover{
+    letter-spacing: 0.5px;
+}
+
+#home a:active{
+    padding: 2px 0px !important;
+}
+
+
+/* portfolio */
+.icon-container{
+    background: #99582a;
+    height: 45vh;
+}
+
+#portfolio a{
+    transition: letter-spacing 0.3s, opacity 0.3s;
+}
+
+#portfolio a:hover{
+    letter-spacing: 2px;
+}
+
+#portfolio a:active{
+    opacity: 80%;
+}
+
+
+/* contact */
+
+.contact-form{
+    height: 75vh;
+}
+
+#contact textarea{
+    resize: none;
+}
+
+#contact button{
+    background: #99582a;
+    color: #ffe6a7;
+    transition: background 0.5s, padding 0.3s;
+    
+}
+
+#contact button:hover{
+    background: #660708;
+}
+
+#contact button:active{
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+#contact img{
+    transition: padding 0.3s, opacity 0.3s;
+}
+
+#contact img:hover{
+    padding: 5px;
+}
+
+#contact img:active{
+    opacity: 85%;
+}
+
+
+/* footer */
+
+footer{
+    background:#660708;
+    color: #ffe6a7;
+}
+
+
+/* placeholder page */
+
+.no-page-frown{
+    font-size:37vh;
+}
+
+.no-page-button{
+    background: #660708;
+    color: #ffe6a7 !important;
+    border-color: #660708 !important;
+    transition: padding 0.2s;
+}
+
+.no-page-button:hover{
+    color: #660708 !important;
+}
+
+.no-page-button:active{
+    padding: 5px;
+}
