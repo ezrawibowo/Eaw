@@ -8,6 +8,18 @@ body, .nav-link, a{
     color: #660708 !important;
 }
 
+/* loading screen */
+
+.spinner-container{
+    background: #ffe6a7;
+    z-index: 1040;
+}
+
+.spinner-grow{
+    width: 20vw;
+    height: 20vw;
+}
+
 
 /* prevent navbar covering content */
 
