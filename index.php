@@ -1,20 +1,19 @@
 <?php
 include('includes/header.php');
 ?>
-        
         <div id="scroll-container" data-bs-spy="scroll" data-bs-target="#scrollspy" data-bs-smooth-scroll="true">
         <section class="container pb-5 py-md-5 mt-md-5" id="home">
             <div class="row">
-                <div class="col-7 col-md-5 offset-md-1">
+                <div class="col-11 col-md-8 offset-md-2">
                    <h1 class="display-2 fw-bolder mt-4">Hi! I'm Ezra.</h1>
                     <h2 class="mt-3 mb-0">Ezra Ariella Wibowo.</h2>
                     <h2 class="mb-5">Web designer with "No-Bullshit" policy.</h2>
                     <a type="button" class="btn mt-md-5 p-0 rounded-0" href="#contact"><h3 class=" fw-bold mb-0">What's on your mind?</h3></a>
                 </div>
                 
-                <div class="col-5 col-md-4 offset-md-1 mt-4 mt-md-0">
+                <!--<div class="col-5 col-md-4 offset-md-1 mt-4 mt-md-0">
                     <img src="img/20220808_112810.jpg" alt="ezra's face" class="img-fluid">
-                </div>
+                </div>-->
             </div> 
         </section> <!-- end #home -->
         
@@ -95,16 +94,26 @@ include('includes/header.php');
             <div class="row">
                 <div class="contact-form col-10 offset-1 col-md-6 offset-md-0 mb-5 mb-md-0 d-flex flex-column">
                     <h2 class="fs-1">what do you have in mind?</h2>
-                    <div class="mb-2">
-                        <input type="text" class="form-control form-control-lg border-0 rounded-0" placeholder="Your name">
-                    </div>
-                    <div class="mb-2">
-                        <input type="email" class="form-control form-control-lg border-0 rounded-0" placeholder="Your email">
-                    </div>
-                    <div class="mb-2 flex-fill">
-                        <textarea class="form-control form-control-lg h-100 border-0 rounded-0" placeholder="Your thoughts"></textarea>
-                    </div>
-                    <button type="submit" class="btn border-0 rounded-0 align-self-start fs-4 fw-bold">Send my thoughts</button>
+                    
+                    <?php
+                    if($_GET['mailAlert'] == 'sent'){
+                    ?>
+                     <div class='position-fixed top-50 start-50 translate-middle w-75 alert fade show'>
+                        <button type="button" class="btn position-absolute end-0 top-50 translate-middle-y border-0" data-bs-dismiss="alert"><span class="bi bi-x-circle h1"></span></button>
+                        <h2 class="fw-bold">Message sent successfully. 
+                        <br> 
+                        We'll get back to you soon!</h2>
+                    </div>   
+                    <?php 
+                        }
+                    ?>
+                    
+                    <form action="email.php" method="post">
+                        <input type="text" class="form-control form-control-lg border-0 rounded-0 mb-2" placeholder="Your name" name="name" required oninvalid="this.setCustomValidity('Please enter your Name.')" oninput="this.setCustomValidity('')">
+                        <input type="email" class="form-control form-control-lg border-0 rounded-0 mb-2" placeholder="Your email" name="email" required oninvalid="this.setCustomValidity('Please enter your Email.')" oninput="this.setCustomValidity('')">   
+                        <textarea class="form-control form-control-lg h-100 border-0 rounded-0 mb-2 flex-fill" placeholder="Your thoughts" name="message" required oninvalid="this.setCustomValidity('Please write your thoughts.')" oninput="this.setCustomValidity('')"></textarea>
+                        <button type="submit" class="btn border-0 rounded-0 align-self-start fs-4 fw-bold" name="submit">Send my thoughts</button>
+                    </form>
                 </div> <!-- end message form -->
                 
                 <div class="col-8 offset-2 col-md-4 offset-md-1">

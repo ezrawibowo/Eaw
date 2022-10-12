@@ -169,3 +169,23 @@ footer{
 .no-page-button:active{
     padding: 5px;
 }
+
+/* alert */
+.alert{
+    background: #660708;
+    color: #ffe6a7;
+}
+
+.alert .bi-x-circle{
+    color: #ffe6a7;
+}
+
+.alert .btn{
+   background: none !important; 
+}
+
+.alert .btn:hover .bi-x-circle{
+    opacity: 75%;
+}
+
+
