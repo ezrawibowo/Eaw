@@ -4,11 +4,13 @@ include('includes/header.php');
         <div id="scroll-container" data-bs-spy="scroll" data-bs-target="#scrollspy" data-bs-smooth-scroll="true">
         <section class="container pb-5 py-md-5 mt-md-5" id="home">
             <div class="row">
-                <div class="col-11 col-md-8 offset-md-2">
-                   <h1 class="display-2 fw-bolder mt-4">Hi! I'm Ezra.</h1>
-                    <h2 class="mt-3 mb-0">Ezra Ariella Wibowo.</h2>
-                    <h2 class="mb-5">Web designer with "No-Bullshit" policy.</h2>
-                    <a type="button" class="btn mt-md-5 p-0 rounded-0" href="#contact"><h3 class=" fw-bold mb-0">What's on your mind?</h3></a>
+                <div class=" hero-text col-10 col-md-9 d-md-flex justify-content-md-end">
+                    <div class=" ms-4 me-md-3 ">
+                       <h1 class="display-2 fw-bolder mt-4">Hi! I'm Ezra.</h1>
+                        <h2 class="mt-3 mb-0">Ezra Ariella Wibowo.</h2>
+                        <h2 class="mb-5">Web designer with "No-Bullshit" policy.</h2>
+                        <a type="button" class="btn mb-4 my-md-5 p-0 rounded-0" href="#contact"><h3 class=" fw-bold mb-0">What's on your mind?</h3></a>
+                    </div>
                 </div>
                 
                 <!--<div class="col-5 col-md-4 offset-md-1 mt-4 mt-md-0">

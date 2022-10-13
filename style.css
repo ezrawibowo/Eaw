@@ -65,7 +65,12 @@ html, body{
 /* home */
 
 #home{
-    color: #99582a;
+    color: #ffe6a7;
+}
+
+.hero-text{
+    background: #99582a;
+    border-radius: 0 30% 30% 0/ 0 50% 50% 0;
 }
 
 #home a{
